@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/clouds.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="weather-container">
+            <h1 class="app-title">Weather App</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Search city..." id="city-input"/>
+                <button id="search-btn">🔍</button>
+            </div>
+            <div class="weather-info">
+                <h2 id="city-name">--</h2>
+                <img id="weather-icon" src="assets/clouds.png" alt="Weather Icon"/>
+                <p id="temperature">--°C</p>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-unit">
+                    <span class="slider round"></span>
+                </label>
+                <p id="weather-description">--</p>
+                <p id="humidity">Humidity: --%</p>
+                <p id="wind">Wind: -- km/h</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Built by <span class="badge">
+            <a href="https://your-link.com" target="_blank">Stefanos Theodosiou</a>
+        </span> © <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
